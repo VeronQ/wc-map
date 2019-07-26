@@ -15,7 +15,7 @@ $ npm install wc-map
 
 ###### JS
 
-``` 
+```js
 const WCMap = require('wc-map');
 
 WCMap('AIzaSyC...'); // Enter API key or Client ID
