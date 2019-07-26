@@ -1,0 +1,33 @@
+{
+	"name": "wc-map",
+	"version": "1.0.0",
+	"description": "Light and easy-to-use Web Component for Google Maps",
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/VeronQ/wc-map.git"
+	},
+	"scripts": {
+		"lint": "eslint -c .eslintrc.json 'index.js'"
+	},
+	"keywords": [
+		"web component",
+		"map",
+		"google"
+	],
+	"files": [
+		"index.js"
+	],
+	"author": {
+		"name": "Quentin Veron",
+		"email": "qveron@outlook.com"
+	},
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/VeronQ/wc-map/issues"
+	},
+	"devDependencies": {
+		"eslint": "^6.0.1"
+	},
+	"dependencies": {}
+}
