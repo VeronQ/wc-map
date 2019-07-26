@@ -16,7 +16,8 @@
 		"google"
 	],
 	"files": [
-		"index.js"
+		"index.js",
+		"index.d.ts"
 	],
 	"author": {
 		"name": "Quentin Veron",
