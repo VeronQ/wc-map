@@ -114,6 +114,10 @@ These styles can be overridden by using the `x-map` CSS selector.
 * [Official Google Maps Web Components](https://github.com/GoogleWebComponents/google-map)
 * [A note about Web Components](https://developer.mozilla.org/en-US/docs/Web/Web_Components)
 
+## Support
+
+See current [support for Custom Elements](https://caniuse.com/#feat=custom-elementsv1).
+
 ## License
 
 MIT
