@@ -91,24 +91,24 @@ declare namespace WCMap {
 
 	interface Options {
 		/**
-		Authentication method.
-		@default 'key'
-		@see https://developers.google.com/maps/documentation/javascript/get-api-key#clientID-features
-		*/
+		 Authentication method.
+		 @default 'key'
+		 @see https://developers.google.com/maps/documentation/javascript/get-api-key#clientID-features
+		 */
 		readonly auth?: 'api_key' | 'client_id',
 
 		/**
-		Version of the API.
-		@default 'weekly'
-		@see https://developers.google.com/maps/documentation/javascript/versions
-		*/
+		 Version of the API.
+		 @default 'weekly'
+		 @see https://developers.google.com/maps/documentation/javascript/versions
+		 */
 		readonly version?: Channels | number,
 
 		/**
-		Language settings.
-		@summary change names for controls, copyright notices, driving directions and labels on map
-		@see https://developers.google.com/maps/documentation/javascript/localization#Language
-		*/
+		 Language settings.
+		 @summary change names for controls, copyright notices, driving directions and labels on map
+		 @see https://developers.google.com/maps/documentation/javascript/localization#Language
+		 */
 		readonly language?: Language,
 	}
 }
