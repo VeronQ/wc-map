@@ -5,6 +5,8 @@
 [![npm version](https://badge.fury.io/js/wc-map.svg)](https://npmjs.org/package/wc-map "View this project on npm")
 [![MIT license](https://img.shields.io/badge/License-MIT-blue.svg)](https://github.com/VeronQ/wc-map/blob/master/LICENSE)
 
+![Demo CLI](../assets/screenshot.png?raw=true)
+
 ## Installation
 
 ```sh
