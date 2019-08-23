@@ -1,6 +1,6 @@
 {
 	"name": "wc-map",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Light and easy-to-use Web Component for Google Maps",
 	"main": "index.js",
 	"repository": {
