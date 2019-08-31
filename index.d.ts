@@ -91,13 +91,6 @@ declare namespace WCMap {
 
 	interface Options {
 		/**
-		 Authentication method.
-		 @default 'key'
-		 @see https://developers.google.com/maps/documentation/javascript/get-api-key#clientID-features
-		 */
-		readonly auth?: 'api_key' | 'client_id',
-
-		/**
 		 Version of the API.
 		 @default 'weekly'
 		 @see https://developers.google.com/maps/documentation/javascript/versions
@@ -113,6 +106,6 @@ declare namespace WCMap {
 	}
 }
 
-declare function WCMap(authValue: string, options?: WCMap.Options): void;
+declare function WCMap(apiKey: string, options?: WCMap.Options): void;
 
 export = WCMap;

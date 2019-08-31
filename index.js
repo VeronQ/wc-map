@@ -3,7 +3,6 @@
 const GOOGLE_MAPS_URL = 'https://maps.googleapis.com/maps/api/js'
 
 const defaultOptions = {
-	AUTH: 'api_key',
 	VERSION: 'weekly'
 }
 
@@ -19,19 +18,19 @@ const mapStyle = {
 	display: 'block'
 }
 
-const loadGoogleMapsScript = (authValue, options) => new Promise((resolve) => {
+const loadGoogleMapsScript = (apiKey, options) => new Promise((resolve) => {
 	const script = document.createElement('script')
 	script.type = 'text/javascript'
-	script.src = createUrl(authValue, options)
+	script.src = createUrl(apiKey, options)
 	script.async = true
 	script.defer = true
 	script.onload = resolve
 	document.head.appendChild(script)
 })
 
-const createUrl = (authValue, options) => {
+const createUrl = (apiKey, options) => {
 	let params = ''
-	const auth = [options.auth === 'client_id' ? 'client' : 'key', authValue].join('=')
+	const auth = ['key', apiKey].join('=')
 	const version = ['v', options.version].join('=')
 	params += [auth, version].join('&')
 
@@ -42,16 +41,16 @@ const createUrl = (authValue, options) => {
 	return [GOOGLE_MAPS_URL, params].join('?')
 }
 
-const WCMap = (authValue, options) => {
+const WCMap = (apiKey, options) => {
 	options = {
-		auth: defaultOptions.AUTH,
 		version: defaultOptions.VERSION,
 		...options
 	};
 
 	(async () => {
-		await loadGoogleMapsScript(authValue, options)
-		window.customElements.define('x-map', class extends HTMLElement {
+		await loadGoogleMapsScript(apiKey, options)
+
+		class XMap extends HTMLElement {
 			constructor() {
 				super()
 				this.lat = defaultAttributes.LAT
@@ -87,7 +86,10 @@ const WCMap = (authValue, options) => {
 					map
 				})
 			}
-		})
+		}
+
+		window.customElements.define('x-map', XMap)
+
 	})()
 }
 

@@ -20,7 +20,8 @@ $ npm install wc-map
 ```js
 const WCMap = require('wc-map');
 
-WCMap('AIzaSyC...'); // Enter API key or Client ID
+// Enter API key
+WCMap('AIzaSyChANyXQKGAi3RRnf0aJ_ZWbstMTgsSV4A');
 ```
 
 ###### HTML
@@ -31,33 +32,24 @@ WCMap('AIzaSyC...'); // Enter API key or Client ID
 
 ## API
 
-### WCMap(authValue, {options}?)
+### WCMap(apiKey, {options}?)
 
 ```js
-WCMap('AIzaSyC...', {
-  auth: 'api_key',
+WCMap('AIzaSyChANyXQKGAi3RRnf0aJ_ZWbstMTgsSV4A', {
   version: '3.37',
   language: 'fr'
 });
 ```
 
-#### authValue (required)
+#### apiKey (required)
 
 Type: `string`  
 
-Api key or Client ID for Google Maps authentification.
+Api key for Google Maps authentification.
 
 #### Options
 
 Type:  `object`
-
-##### auth
-
-Type: `string`  
-Default: `api_key`  
-Values: `api_key` | `client_id`
-
-Method used to authenticate to Google Maps services.
 
 #### version
 
