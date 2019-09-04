@@ -115,4 +115,4 @@ See current [support for Custom Elements](https://caniuse.com/#feat=custom-eleme
 
 ## License
 
-MIT
+[MIT](https://github.com/VeronQ/wc-map/blob/master/LICENSE)
