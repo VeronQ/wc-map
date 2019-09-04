@@ -7,9 +7,7 @@
 		"type": "git",
 		"url": "https://github.com/VeronQ/wc-map.git"
 	},
-	"scripts": {
-		"lint": "eslint -c .eslintrc.json 'index.js'"
-	},
+	"scripts": {},
 	"keywords": [
 		"web component",
 		"map",
