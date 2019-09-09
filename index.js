@@ -68,19 +68,16 @@ const WCMap = (apiKey, options) => {
 
       connectedCallback () {
         Object.assign(this.style, mapStyle)
-        // eslint-disable-next-line no-undef
         const position = new google.maps.LatLng(
           parseFloat(this.lat),
           parseFloat(this.lng)
         )
 
-        // eslint-disable-next-line no-undef
         const map = new google.maps.Map(this, {
           zoom: this.zoom,
           center: position
         })
 
-        // eslint-disable-next-line no-undef
         new google.maps.Marker({
           position,
           map
