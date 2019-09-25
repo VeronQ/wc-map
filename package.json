@@ -9,8 +9,8 @@
 	},
 	"keywords": [
 		"web component",
-		"map",
-		"google"
+    "custom element",
+		"google maps"
 	],
 	"files": [
 		"index.js",
@@ -18,7 +18,7 @@
 	],
 	"author": {
 		"name": "Quentin Veron",
-		"email": "qveron@outlook.com"
+		"email": "qve.veron@gmail.com"
 	},
 	"license": "MIT",
 	"bugs": {

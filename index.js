@@ -34,7 +34,7 @@ const createUrl = (apiKey, options) => {
   const version = ['v', options.version].join('=')
   params += [auth, version].join('&')
 
-  if ('language' in options) {
+  if (options.hasOwnProperty('language')) {
     params += `&language=${options.language}`
   }
 
