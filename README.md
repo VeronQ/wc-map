@@ -111,7 +111,8 @@ These styles can be overridden by using the `x-map` CSS selector.
 
 ## Support
 
-See current [support for Custom Elements](https://caniuse.com/#feat=custom-elementsv1).
+See current [support for Custom Elements](https://caniuse.com/#feat=custom-elementsv1).  
+(**89.78%** as of February 6, 2020)
 
 ## License
 

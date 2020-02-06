@@ -18,6 +18,12 @@ const mapStyle = {
   display: 'block'
 }
 
+/**
+ *
+ * @param apiKey
+ * @param options
+ * @returns {Promise<any>}
+ */
 const loadGoogleMapsScript = (apiKey, options) => new Promise((resolve) => {
   const script = document.createElement('script')
   script.type = 'text/javascript'
@@ -28,6 +34,12 @@ const loadGoogleMapsScript = (apiKey, options) => new Promise((resolve) => {
   document.head.appendChild(script)
 })
 
+/**
+ *
+ * @param apiKey
+ * @param options
+ * @returns {string}
+ */
 const createUrl = (apiKey, options) => {
   let params = ''
   const auth = ['key', apiKey].join('=')
@@ -41,6 +53,12 @@ const createUrl = (apiKey, options) => {
   return [GOOGLE_MAPS_URL, params].join('?')
 }
 
+/**
+ *
+ * @param apiKey
+ * @param options
+ * @constructor
+ */
 const WCMap = (apiKey, options) => {
   options = {
     version: defaultOptions.VERSION,
@@ -86,7 +104,6 @@ const WCMap = (apiKey, options) => {
     }
 
     window.customElements.define('x-map', XMap)
-
   })()
 }
 
